@@ -1,0 +1,22 @@
+.FacebookButton {
+  width: 190px;
+  padding: 0.7rem 0.5rem;
+  border-radius: 4px;
+  background: #4267b2;
+  color: white;
+  border: 0px transparent;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.1em;
+
+  &__icon {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+}

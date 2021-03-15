@@ -1,0 +1,27 @@
+.Error {
+  color: #d8000c;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+
+  &__icon {
+    margin-bottom: 2px;
+    margin-right: 3px;
+  }
+}
+
+.Correct {
+  color: green;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+
+  &__icon {
+    margin-bottom: 2px;
+    margin-right: 3px;
+  }
+}

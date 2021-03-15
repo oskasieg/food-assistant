@@ -1,0 +1,35 @@
+.SearchProductBar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__list {
+    top: 75px;
+    border: solid 1px;
+    position: absolute;
+    width: 252.38px;
+    z-index: 5;
+    background-color: white;
+  }
+
+  &__element {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+    font-size: 1.2em;
+  }
+
+  &__element:last-of-type {
+    border-bottom: none;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    color: #4caf50;
+    cursor: pointer;
+  }
+}

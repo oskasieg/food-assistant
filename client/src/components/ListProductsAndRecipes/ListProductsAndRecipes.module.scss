@@ -1,0 +1,72 @@
+.ListProductsAndRecipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 1px 20px;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    border-radius: 10px;
+    width: 190px;
+    color: black;
+    border: solid 2px;
+    padding-bottom: 2rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0;
+  }
+
+  &__image {
+    height: 150px;
+    align-self: center;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__row {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  &__itemButton {
+    align-self: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    color: #4caf50;
+  }
+}

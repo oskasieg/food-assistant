@@ -1,0 +1,33 @@
+.EatingPlanForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    padding: 0.5rem 0;
+  }
+
+  &__elementRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
+  }
+
+  &__elementInputs {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__removeIcon {
+    width: 30px;
+    height: 30px;
+    color: #f44336;
+    cursor: pointer;
+  }
+}

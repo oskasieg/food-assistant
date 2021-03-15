@@ -1,0 +1,61 @@
+.UserForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.2s opacity;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__fileInput {
+    width: 116px;
+    cursor: pointer;
+    margin-top: 0.2rem;
+  }
+
+  &__validation {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 200px;
+      border: solid 2px;
+    }
+  }
+
+  &__gender {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    color: blue;
+  }
+
+  &__uploadIcon {
+    width: 50px;
+    height: 50px;
+    color: #008cba;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+}
+
+.UserFormHidden {
+  opacity: 0;
+}

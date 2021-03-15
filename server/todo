@@ -1,0 +1,194 @@
+Poprawki po wakacjach:
+
+1. Przeniesc niektore controllery z auth -> user OK
+2. import/export -> require/module.exports OK 
+
+
+#0 12.10.2020
+1. Stworzyć bazę danych na podstawie projektu:
+- przepisywac na biezaco wraz z dopisywaniem funkcjonalnosci,
+- osobne tabele to users + tam gdzie jest user_id jako kolumna
+- pozostale tabele jako nested objects w dokumencie
+
+#1 12.10.2020
+1. Rejestracja:
+- rejestracja z weryfikacją maila:
+    * po stworzeniu tokena wyslac maila z linkiem do endpointa /confirmation/:user_id/:token OK
+    * gdy sie w to wejdzie sprawdza poprawnosc tokena OK
+    * jezeli sie zgadza odsyla na routa na froncie oraz edit profile OK
+    * rout na froncie (formik, redux, redux-saga), OK
+    * przy rejestracji dodac login, w edycji loginu nie mozna zmieniac! OK
+    * na roucie /profile if isVerified === false -> odnosnik do generowania nowego maila OK
+    * na roucie /profile if isVerified === true -> formularz edycji profilu OK
+    * jak edytuje profil -> informacje o profilu OK
+- google OK
+- fb OK
+
+#2 15.10.2020
+    * pobieranie "swojego" profilu poprzez token.
+    * i18n
+    * react-notifications
+
+#3 19.10.2020
+    * pobieranie informacji o produktach z Edamam API (potrzebna optymalizacja) OK
+    * dodawanie produktow przez uzytkownika OK  
+    * pobieranie produktow uzytkownika OK 
+    * stworzyc osobne komponenty tam gdzie zaznaczone na Froncie OK
+    * formularz na reczne dodawanie produktu OK
+    * stworzyc autocomplete liste dla sugerowanych produktow
+    * do listy z Edamam dodawać sugerowane z bazy danych (stworzone przez uzytkownikow) OK
+
+#4 25.10.2020
+    * formularz dodawania przepisow OK
+
+#5 28.10.2020
+    * edycja przepisow, OK
+    * usuwanie przepisow (nie z bazy), OK 
+    * usuwanie produktow (nie z bazy), OK
+    * wyliczanie wartosci odzywczych przepisu po stronie serwera,
+    * dodanie typu posilku do przepisu, OK
+
+#6 29.10.2020
+    * serwer wylicza kalorycznosc potrawy i dodaje do bazy, OK
+    * przy wylistowaniu potrawy pokazuje wartosci odzywcze, OK
+    * mozliwosc usuwania elementow z AddEatingPlanForm OK
+    * edycja planu posilku: serwer i front OK
+    * co po odswiezeniu formularza dodawania planu jedzenia (w params dodac date?) OK
+    * jezeli nie znajduje posilku to dawac inny kod niz 400 OK
+    * planowanie w przodu i w tyl posilkow OK
+
+#7 04.11.2020
+    * podsumowanie dnia (wartosci odzywcze) OK
+    * naprawic szukanie produktow z bazy OK
+
+#  12.11.2020
+    * utworzenie strony glownej z ostatnimi przepisami / produktami OK 
+    * dodanie wyszukiwarki po wzorcu OK
+    * wymyslic system szukania pod wzgledem kategorii itp OK 
+
+# 13.11.2020
+    * dodanie typu do userProducts (warzywo, owoc, pakowana zywnosc, slodycze, nabial) OK
+    * mozliwosc dodania zdjecia do potrawy / produktu OK
+    * wyswietlanie zdjec przy listowaniu przepisow i produktow OK
+    * licznik ile sie wypilo wody (poszukac ile czlowiek powinien pic na dzien) OK
+    * system liczacy ile jesc zeby schudnac (poszukac w internecie wzory)
+
+# 16.11.2020
+    * zdjecia do krokow w przepisie OK
+
+# 16.11.2020
+    * pobieranie bazy z przepisownia.pl OK
+    * przemapowac produkty, naprawic czas wykonania OK
+    * Recipe: jeżeli produkt posiada jakies wartosci to je wypisac OK
+    * Recipe: inaczej mapować liste krokow, bo sa "puste" kroki
+    
+# 17.11.2020
+    * dodawanie produktow i przepisow ze strony glownej OK
+
+# 20.11.2020
+    * mozliwosc dodania przepisu z poziomu podgladu
+    * system, ktory wykrywa ktore produkty nie maja wartosci
+        - wtedy mozliwosc podania wartosci przepisu recznie
+        - lub edycja listy produktow OK
+    
+# 23.11.2020 Nutritionix
+    * scrapData:
+        - dodanie nieistniejacych produktow do bazy OK
+        - pobranie wartosci odzywczych produktow i ustawienie ich do przepisu OK
+        
+
+# 25.11.2020
+    * zaokraglenie wyliczanych wartosci odzywczych dla produktow i przepisow OK
+    * zmiana ilosci porcji podczas edycji OK
+    * co gdy nazwa produktu sklada sie z 2 wyrazow
+    * przypadki gdzie nie znajduje produktow
+
+# 2.12.2020
+    * przemapowac response z edamam i obliczyc values_per_100 i weight OK
+    * scrapData - dodawac produkty z unit 'grams' i pieces '1' OK
+    * konto admina i usuwanie przepisow i produktow OK
+
+# 3.12.2020
+    * przeniesc obliczanie wartosci dla planu jedzenia na backend OK
+
+# 4.12.2020
+
+    * fuzzy search OK
+    * przefiltrowac liste krokow przepisow z przepisownia.pl OK
+    * czas wykonania przepisownia.pl OK 
+
+# 5.12.2020
+    * wyszukiwanie produktów z bazy w planowaniu OK
+    * zaawansowana wyszukiwarka OK
+
+# 7.12.2020
+    * nowa baza danych w sieci (server i scrapData) OK
+    * scrapData: 
+        - przeniesc do osobnego katalogu OK
+        - stworzyc system dzialajacy samodzielnie OK
+        - zrobic porzadek po scrapData na serwerze OK
+    * przerobic strone glowna OK
+    * tworzenie produktow i przepisow z duzej litery OK
+
+# 8.12.2020
+    * pagination OK
+    * usprawniony system filtrowania przepisow po produktach OK
+    * scrapData:
+        - ustalic endpointy, interwaly czasowe, limity stron OK
+
+
+# 9.12.2020
+    * rozbudować typy przepisow OK
+    * fuzzySearch w wyszukiwarce OK
+    * usprawienie filtra o wykluczone produkty OK
+
+# 11.12.2020
+    * wybierac ile porcji posilkow sie je OK
+    * przy pobieraniu przepisu wyliczac jego wage lub sztuki OK
+
+# 12.12.2020
+    * naprawic sortowanie po dacie
+
+# 21.12.2020
+    * sprawdzic confidence score
+    * dodac wyrazy ktore pomijac przy wyszukiwaniu produktow OK
+    * nie dodawac zdublowanych produktow
+
+# 24.12.2020
+    * scrap: dodac do opisu przepisu, ze zaimportowany z przepisownia OK
+    * produkty z Nutritionix powinny miec typ Nutritionix OK
+    * edycja avatara OK
+    * wyszukiwarka: kurczak mango
+
+# SCRAP DATA:
+    * jezeli skladniki sa puste to pomijac OK
+    * usunac jednostki i liczby z nazwy skladnika OK
+    * dodac do bazy produkt ziele angielskie, liść laurowy, sezam, mąka, śmietana, por, pieczarki
+    * pieczarek -> pieczarki
+
+
+    TESTOWAC NA DODAWANIU POJEDYNCZEGO PRZEPISU
+
+PROBLEMY SCRAP DATA:
+
+    3. W zaleznosci od tego co zwroci tlumacz google moga wystepwoac zdublowane produkty w bazie o roznych nazwach
+
+Poprawki:
+    * planowanie
+    * strona glowna, czcionka
+
+
+Na przyszlosc:
+- po ukonczeniu komponentu tam gdzie trzeba weryfikacja isLogged
+- zablokoc funkcjonalnosci gdy uzytkownik nie potwierdzony
+
+- powiadomienia OK
+
+- walidacja formularzy OK
+
+- style OK
+
+
+
+
+

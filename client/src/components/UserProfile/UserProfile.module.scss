@@ -1,0 +1,39 @@
+.UserProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  opacity: 1;
+  transition: 0.2s opacity;
+
+  &__informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__row {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__avatar {
+    max-width: 200px;
+    border: solid 2px;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.UserProfileHidden {
+  opacity: 0;
+}

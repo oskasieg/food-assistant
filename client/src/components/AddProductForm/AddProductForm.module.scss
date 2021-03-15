@@ -1,0 +1,34 @@
+.AddProductForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  opacity: 1;
+  transition: 0.2s opacity;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    color: #4caf50;
+  }
+
+  &__inputFile {
+    width: 116px;
+    align-self: center;
+  }
+
+  &__validation {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.AddProductFormHidden {
+  opacity: 0;
+}

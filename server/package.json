@@ -1,0 +1,50 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Prototype server to my app",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "restart": "rimraf dist  && npm run build && npm run start",
+    "dev": "nodemon --exec npm run restart"
+  },
+  "author": "Krzysztof Sieg",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.6",
+    "@vitalets/google-translate-api": "^4.0.0",
+    "axios": "^0.21.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "googleapis": "^61.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.16",
+    "mongoose-fuzzy-searching": "^2.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.13",
+    "nodemon": "^2.0.4",
+    "puppeteer": "^5.5.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "rimraf": "^3.0.2",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-spread": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "pstree.remy": "^1.1.0"
+  }
+}

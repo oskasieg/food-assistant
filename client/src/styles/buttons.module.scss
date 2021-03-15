@@ -1,0 +1,79 @@
+.RedButtonDisabled {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f44336;
+  margin-top: 1.5rem;
+  width: 120px;
+  align-self: center;
+  padding: 0.7rem 0.5rem;
+  cursor: not-allowed;
+  border: none;
+  transition: background-color 0.2s;
+  font-size: 1.1em;
+}
+
+.RedButtonDisabled:hover {
+  background-color: #ffb0b0;
+}
+
+.GreenButton {
+  color: white;
+  background-color: #4caf50;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  width: 120px;
+  font-size: 1.1em;
+  align-self: center;
+  text-align: center;
+  padding: 0.7rem 0.5rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.GreenButton:hover {
+  background-color: #4caf50a6;
+}
+
+.RedButton {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f44336;
+  margin-top: 1.5rem;
+  width: 120px;
+  align-self: center;
+  padding: 0.7rem 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+  font-size: 1.1em;
+}
+
+.RedButton:hover {
+  background-color: #ffb0b0;
+}
+
+.Button {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: #008cba;
+  margin-top: 1.5rem;
+  width: 120px;
+  align-self: center;
+  padding: 0.7rem 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+  font-size: 1.1em;
+}
+
+.Button:hover {
+  background-color: #008cba7d;
+}
+
+button:focus {
+  outline: none;
+}
