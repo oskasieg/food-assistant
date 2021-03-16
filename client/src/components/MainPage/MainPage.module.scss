@@ -1,0 +1,39 @@
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: 0.2s opacity;
+
+  &__buttons {
+    margin-top: 3rem;
+  }
+
+  &__button {
+    width: 190px;
+    padding: 0.7rem 0;
+    border-radius: 4px;
+    background: #695f5e;
+    color: white;
+    border: 0px transparent;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1em;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+  }
+}
+
+.MainPageHidden {
+  opacity: 0;
+}

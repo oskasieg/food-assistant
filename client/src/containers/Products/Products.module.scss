@@ -1,0 +1,10 @@
+.Products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+}

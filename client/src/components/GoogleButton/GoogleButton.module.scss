@@ -1,0 +1,22 @@
+.GoogleButton {
+  width: 190px;
+  padding: 0.7rem 0.5rem;
+  border-radius: 4px;
+  background: #db4437;
+  color: white;
+  border: 0px transparent;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1.1rem;
+
+  &__icon {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+}

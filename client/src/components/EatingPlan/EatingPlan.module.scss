@@ -1,0 +1,36 @@
+.EatingPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  &__dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__dishName {
+    margin: 0.5rem;
+    font-size: 1.2em;
+  }
+
+  &__addButton {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #555555;
+    padding: 0.5rem;
+  }
+}

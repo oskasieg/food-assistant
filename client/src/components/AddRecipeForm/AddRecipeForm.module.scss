@@ -1,0 +1,160 @@
+.AddRecipeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.2s opacity;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+  }
+
+  &__validation {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__inputFile {
+    width: 116px;
+    align-self: center;
+  }
+
+  &__image {
+    height: 150px;
+    background-color: white;
+    max-width: 150px;
+    margin-top: 1rem;
+    align-self: center;
+  }
+
+  &__uploadIcon {
+    width: 50px;
+    height: 50px;
+    color: #008cba;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  &__searchBar {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+
+    input {
+      width: 50px;
+    }
+
+    label,
+    input {
+      margin: 0;
+    }
+
+    label {
+      font-weight: initial;
+      font-size: 1em;
+    }
+
+    input {
+      font-size: 1em;
+    }
+  }
+
+  &__listProducts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+
+    @media (min-width: 800px) {
+      align-self: center;
+      width: 800px;
+    }
+
+    @media (min-width: 1100px) {
+      width: 1100px;
+    }
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    padding: 0.5rem 0;
+  }
+
+  &__productRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__productInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__values {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    color: #4caf50;
+  }
+
+  &__step {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__stepText {
+    width: 65%;
+    padding: 0.5rem 0;
+    font-size: 1.2em;
+  }
+
+  &__stepButtons {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__uploadButton {
+    width: 30px;
+    height: 30px;
+    color: #008cba;
+    cursor: pointer;
+  }
+
+  &__stepImage {
+    max-height: 150px;
+  }
+
+  &__removeIcon {
+    width: 30px;
+    height: 30px;
+    color: #f44336;
+    cursor: pointer;
+  }
+}
+
+.AddRecipeFormHidden {
+  opacity: 0;
+}

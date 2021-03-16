@@ -1,0 +1,11 @@
+.AdminPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__items {
+    height: 620px;
+    overflow-y: auto;
+  }
+}

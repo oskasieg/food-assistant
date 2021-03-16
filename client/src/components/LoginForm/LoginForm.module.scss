@@ -1,0 +1,22 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.2s opacity;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__validation {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.LoginFormHidden {
+  opacity: 0;
+}

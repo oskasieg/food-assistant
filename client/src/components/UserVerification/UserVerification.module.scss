@@ -1,0 +1,13 @@
+.UserVerification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  &__icon {
+    color: #f44336;
+    height: 60px;
+    width: 60px;
+  }
+}
