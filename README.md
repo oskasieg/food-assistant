@@ -32,6 +32,7 @@ Aplikacja kliencka napisana w React.JS przy przy pomocy języka Typescript oraz 
 #### instalacja i uruchamianie:
 
 npm install
+
 npm run start
 
 ## server
@@ -47,5 +48,6 @@ Serwer napisany w Node.JS przy pomocy środowiska Express.js. Baza danych MongoD
 #### instalacja i uruchamianie:
 
 npm install
+
 npm run dev
 
