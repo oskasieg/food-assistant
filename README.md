@@ -15,6 +15,7 @@ Aplikacja kliencka napisana w React.JS przy przy pomocy języka Typescript oraz 
 * dodawanie produktów do bazy oraz zarządzanie nimi
 * dodawanie przepisów do bazy oraz zarządzanie nimi
 * wyszukiwarka elementów wzbogacona o filtry wyszukiwania
+* użytkownik admin, który ma możliwość usuwania przepisów oraz produktów z bazy
 
 #### wykorzystane technologie:
 
