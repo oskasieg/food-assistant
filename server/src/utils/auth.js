@@ -1,10 +1,8 @@
-import User from "../resources/user/user.model";
-
 const jwt = require("jsonwebtoken");
 const config = require("../config");
 
 // create new token
-export const newToken = (user) =>
+const newToken = (user) =>
   jwt.sign({ id: user._id }, config.secrets.jwt, {
     expiresIn: config.secrets.jwtExp,
   });
