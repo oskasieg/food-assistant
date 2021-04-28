@@ -1,5 +1,9 @@
 ## food-assistant
 
+## DEMO 
+
+https://food-assistant-oskasieg.netlify.app/
+
 Praca przedstawia proces tworzenia zaawansowanej aplikacji internetowej z wykorzystaniem bibliotek oraz środowisk pracy Javascript. Użytkownik końcowy ma do dyspozycji szereg funkcjonalności, które umożliwiają zarządzanie posiłkami. Wszystkie produkty w bazie danych zawierają informacje o wartościach odżywczych. Wartości przepisów są wyliczane automatycznie. Jest częścią stworzonej przeze mnie pracy inżynierskiej.
 
 ## client
